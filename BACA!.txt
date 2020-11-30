@@ -1,10 +1,8 @@
 ADMIN LOGIN PASS
 
-Email : rhomairama@gmail.com
-Password : rhomairama
+Email : riska@gmail.com
+Password : riska
 
-Email : rama@gmail.com
-Password : rama
 
 Client : http://localhost/riskayunita-tugas/
 Admin : http://localhost/riskayunita-tugas/admin/beranda
