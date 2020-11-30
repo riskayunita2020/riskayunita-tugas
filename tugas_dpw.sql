@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.0.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 29, 2020 at 10:23 PM
--- Server version: 10.4.16-MariaDB
--- PHP Version: 7.4.12
+-- Generation Time: Nov 30, 2020 at 02:05 AM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -64,11 +64,9 @@ CREATE TABLE `produk` (
 --
 
 INSERT INTO `produk` (`id`, `id_user`, `nama_produk`, `harga`, `berat`, `deskripsi`, `stok`, `created_at`, `updated_at`) VALUES
-(11, NULL, 'Teman Bangsat', 350000, 65000, 'tfygygj', 10, '2020-11-26 12:30:11', '2020-11-27 20:21:14'),
-(12, 11, 'Dijual Noberto, Teman Bangsat Ketika Nugas', 500000, 50000, 'Tawar jak bah lor', 1, '2020-11-27 06:16:12', '2020-11-27 20:22:30'),
-(14, 11, 'Dijual Muffidz, Teman Bangsat Ketika Nugas', 1200000, 66000, 'tawar jak bah lor, dapat murah mah', 1, '2020-11-27 09:59:39', '2020-11-27 09:59:39'),
-(15, 11, 'Piringan Hitam O.M. Soneta Volume I', 500000, 500, 'harge murah lor', 2, '2020-11-27 10:00:16', '2020-11-27 10:00:16'),
-(16, 12, 'kolor burok', 1500, 2, 'masih layak pakai', 1000, '2020-11-27 13:25:56', '2020-11-27 13:25:56');
+(12, 11, 'Dijual Teman Malas Ketika Nugas', 500000, 50000, 'Tawar jak bah lor', 1, '2020-11-27 06:16:12', '2020-11-30 01:03:06'),
+(15, 11, 'Gelas Kaca', 500000, 500, 'harge murah lor', 2, '2020-11-27 10:00:16', '2020-11-30 01:03:17'),
+(17, 13, 'TEST', 500, 500, '2222', 500, '2020-11-29 18:00:59', '2020-11-29 18:00:59');
 
 -- --------------------------------------------------------
 
@@ -92,8 +90,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `email`, `nama_user`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(11, 'Rhoma Irama', 'rhomairama@gmail.com', 'Rhoma Irama', '$2y$10$ubg/a8.tmrhUjPWwFS.QceWOTEjV7EyJuU5YXR9nFiJp3SrUiQCim', NULL, '2020-11-25 01:50:22', '2020-11-29 10:52:37'),
-(12, 'rama', 'rama@gmail.com', 'Rama', '$2y$10$0dVEeYcakN5cnf9tuAwnsee.DIz9dAiITqFz0mbEdCU5drN1cST42', NULL, '2020-11-27 09:52:50', '2020-11-27 09:52:50');
+(11, 'Riska Yunita', 'riskayunita@gmail.com', 'Riska Yunita', '$2y$10$22BiZeC1/IIsiHgfiogKIe8x0y1YepND5uYO0x/9kR728iV00OA5K', NULL, '2020-11-25 01:50:22', '2020-11-29 17:58:35'),
+(13, 'Riska', 'riska@gmail.com', 'Riska', '$2y$10$RKe4Rco6XVJSiemp15LMqeOBIhjXRtG7arKZ1S5sv9DwQN71Yjwwa', NULL, '2020-11-29 17:59:53', '2020-11-29 17:59:53');
 
 -- --------------------------------------------------------
 
@@ -115,7 +113,8 @@ CREATE TABLE `user_detail` (
 
 INSERT INTO `user_detail` (`id`, `id_user`, `no_handphone`, `created_at`, `updated_at`) VALUES
 (1, 11, '+6289669696969', '2020-11-26 11:57:30', '2020-11-26 11:57:30'),
-(2, 12, '+629577847736', '2020-11-27 09:52:50', '2020-11-27 09:52:50');
+(2, 12, '+629577847736', '2020-11-27 09:52:50', '2020-11-27 09:52:50'),
+(3, 13, '+6236589656', '2020-11-29 17:59:53', '2020-11-29 17:59:53');
 
 --
 -- Indexes for dumped tables
@@ -159,19 +158,19 @@ ALTER TABLE `kategori`
 -- AUTO_INCREMENT for table `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `user_detail`
 --
 ALTER TABLE `user_detail`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
